@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Crypto</string>
+    <string name="coins">Список валют</string>
+    <string name="favourites">Избранное</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_favourites_fragment">Hello Favourites Fragment</string>
+    <string name="hello_coin_list_fragment">Hello Coin List Fragment</string>
+</resources>
