@@ -3,6 +3,8 @@ package com.amandrykin.crypto.data.local.preferences
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
+import javax.inject.Inject
+import javax.inject.Singleton
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
@@ -10,7 +12,8 @@ interface PreferencesStorage {
     var timeLoadedAt: Long
 }
 
-class SharedPreferencesStorage(context: Context): PreferencesStorage {
+@Singleton
+class SharedPreferencesStorage @Inject constructor(context: Context): PreferencesStorage {
 
     companion object {
         const val PREFERENCES_NAME = "COINS_PREFS"

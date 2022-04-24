@@ -19,7 +19,7 @@ interface CoinsListDao {
     fun favouriteCoins(): LiveData<List<CoinsListEntity>>
 
     @Query("SELECT symbol FROM coins_list WHERE isFavourite = 1")
-    suspend fun favouriteFromSymbol(): List<String>
+    suspend fun favouriteSymbols(): List<String>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(list: List<CoinsListEntity>)
